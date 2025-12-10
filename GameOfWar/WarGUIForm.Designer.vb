@@ -26,6 +26,7 @@ Partial Class WarGUIForm
         Me.flpTopButtons = New System.Windows.Forms.FlowLayoutPanel()
         Me.btnStartGame = New System.Windows.Forms.Button()
         Me.btnEndGame = New System.Windows.Forms.Button()
+        Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.tlpStatus = New System.Windows.Forms.TableLayoutPanel()
         Me.lblWarCount = New System.Windows.Forms.Label()
@@ -59,7 +60,6 @@ Partial Class WarGUIForm
         Me.grpP2War = New System.Windows.Forms.GroupBox()
         Me.btnPlayCardP1 = New System.Windows.Forms.Button()
         Me.btnPlayCardP2 = New System.Windows.Forms.Button()
-        Me.btnAbout = New System.Windows.Forms.Button()
         Me.flpTopButtons.SuspendLayout()
         Me.tlpStatus.SuspendLayout()
         Me.tlpPlayArea.SuspendLayout()
@@ -107,6 +107,18 @@ Partial Class WarGUIForm
         Me.btnEndGame.Text = "End Game"
         Me.btnEndGame.UseVisualStyleBackColor = False
         '
+        'btnAbout
+        '
+        Me.btnAbout.BackColor = System.Drawing.Color.ForestGreen
+        Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAbout.ForeColor = System.Drawing.Color.White
+        Me.btnAbout.Location = New System.Drawing.Point(345, 13)
+        Me.btnAbout.Name = "btnAbout"
+        Me.btnAbout.Size = New System.Drawing.Size(160, 40)
+        Me.btnAbout.TabIndex = 1
+        Me.btnAbout.Text = "About"
+        Me.btnAbout.UseVisualStyleBackColor = False
+        '
         'btnExit
         '
         Me.btnExit.BackColor = System.Drawing.Color.ForestGreen
@@ -127,7 +139,7 @@ Partial Class WarGUIForm
         Me.tlpStatus.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239.0!))
         Me.tlpStatus.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230.0!))
         Me.tlpStatus.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 219.0!))
-        Me.tlpStatus.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229.0!))
+        Me.tlpStatus.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230.0!))
         Me.tlpStatus.Controls.Add(Me.lblWarCount, 5, 1)
         Me.tlpStatus.Controls.Add(Me.lblRoundCount, 4, 1)
         Me.tlpStatus.Controls.Add(Me.lblWarsFought, 5, 0)
@@ -155,10 +167,10 @@ Partial Class WarGUIForm
         Me.lblWarCount.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblWarCount.Font = New System.Drawing.Font("Consolas", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblWarCount.ForeColor = System.Drawing.Color.Tomato
-        Me.lblWarCount.Location = New System.Drawing.Point(1083, 43)
+        Me.lblWarCount.Location = New System.Drawing.Point(1082, 43)
         Me.lblWarCount.Margin = New System.Windows.Forms.Padding(3, 10, 3, 3)
         Me.lblWarCount.Name = "lblWarCount"
-        Me.lblWarCount.Size = New System.Drawing.Size(224, 47)
+        Me.lblWarCount.Size = New System.Drawing.Size(225, 47)
         Me.lblWarCount.TabIndex = 18
         Me.lblWarCount.Text = "0"
         Me.lblWarCount.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -169,7 +181,7 @@ Partial Class WarGUIForm
         Me.lblRoundCount.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblRoundCount.Font = New System.Drawing.Font("Consolas", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblRoundCount.ForeColor = System.Drawing.Color.Tomato
-        Me.lblRoundCount.Location = New System.Drawing.Point(864, 43)
+        Me.lblRoundCount.Location = New System.Drawing.Point(863, 43)
         Me.lblRoundCount.Margin = New System.Windows.Forms.Padding(3, 10, 3, 3)
         Me.lblRoundCount.Name = "lblRoundCount"
         Me.lblRoundCount.Size = New System.Drawing.Size(213, 47)
@@ -182,9 +194,9 @@ Partial Class WarGUIForm
         Me.lblWarsFought.AutoSize = True
         Me.lblWarsFought.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblWarsFought.ForeColor = System.Drawing.Color.Tomato
-        Me.lblWarsFought.Location = New System.Drawing.Point(1083, 10)
+        Me.lblWarsFought.Location = New System.Drawing.Point(1082, 10)
         Me.lblWarsFought.Name = "lblWarsFought"
-        Me.lblWarsFought.Size = New System.Drawing.Size(224, 23)
+        Me.lblWarsFought.Size = New System.Drawing.Size(225, 23)
         Me.lblWarsFought.TabIndex = 16
         Me.lblWarsFought.Text = "Wars Fought:"
         Me.lblWarsFought.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -194,7 +206,7 @@ Partial Class WarGUIForm
         Me.lblRoundsPlayed.AutoSize = True
         Me.lblRoundsPlayed.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblRoundsPlayed.ForeColor = System.Drawing.Color.Tomato
-        Me.lblRoundsPlayed.Location = New System.Drawing.Point(864, 10)
+        Me.lblRoundsPlayed.Location = New System.Drawing.Point(863, 10)
         Me.lblRoundsPlayed.Name = "lblRoundsPlayed"
         Me.lblRoundsPlayed.Size = New System.Drawing.Size(213, 23)
         Me.lblRoundsPlayed.TabIndex = 15
@@ -207,7 +219,7 @@ Partial Class WarGUIForm
         Me.lblPlayer2Captured.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblPlayer2Captured.Font = New System.Drawing.Font("Consolas", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer2Captured.ForeColor = System.Drawing.Color.Orange
-        Me.lblPlayer2Captured.Location = New System.Drawing.Point(634, 43)
+        Me.lblPlayer2Captured.Location = New System.Drawing.Point(633, 43)
         Me.lblPlayer2Captured.Margin = New System.Windows.Forms.Padding(3, 10, 3, 3)
         Me.lblPlayer2Captured.Name = "lblPlayer2Captured"
         Me.lblPlayer2Captured.Size = New System.Drawing.Size(224, 47)
@@ -220,11 +232,11 @@ Partial Class WarGUIForm
         Me.Label2.AutoSize = True
         Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Label2.ForeColor = System.Drawing.Color.Orange
-        Me.Label2.Location = New System.Drawing.Point(634, 10)
+        Me.Label2.Location = New System.Drawing.Point(633, 10)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(224, 23)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Player 1 Captured:"
+        Me.Label2.Text = "Player 2 Captured:"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblPlayer1Captured
@@ -236,7 +248,7 @@ Partial Class WarGUIForm
         Me.lblPlayer1Captured.Location = New System.Drawing.Point(188, 43)
         Me.lblPlayer1Captured.Margin = New System.Windows.Forms.Padding(3, 10, 3, 3)
         Me.lblPlayer1Captured.Name = "lblPlayer1Captured"
-        Me.lblPlayer1Captured.Size = New System.Drawing.Size(201, 47)
+        Me.lblPlayer1Captured.Size = New System.Drawing.Size(200, 47)
         Me.lblPlayer1Captured.TabIndex = 10
         Me.lblPlayer1Captured.Text = "0"
         Me.lblPlayer1Captured.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -248,7 +260,7 @@ Partial Class WarGUIForm
         Me.lblPlayer1Capt.ForeColor = System.Drawing.Color.Cyan
         Me.lblPlayer1Capt.Location = New System.Drawing.Point(188, 10)
         Me.lblPlayer1Capt.Name = "lblPlayer1Capt"
-        Me.lblPlayer1Capt.Size = New System.Drawing.Size(201, 23)
+        Me.lblPlayer1Capt.Size = New System.Drawing.Size(200, 23)
         Me.lblPlayer1Capt.TabIndex = 9
         Me.lblPlayer1Capt.Text = "Player 1 Captured:"
         Me.lblPlayer1Capt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -259,7 +271,7 @@ Partial Class WarGUIForm
         Me.lblPlayer2Hand.Dock = System.Windows.Forms.DockStyle.Fill
         Me.lblPlayer2Hand.Font = New System.Drawing.Font("Consolas", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblPlayer2Hand.ForeColor = System.Drawing.Color.Orange
-        Me.lblPlayer2Hand.Location = New System.Drawing.Point(395, 43)
+        Me.lblPlayer2Hand.Location = New System.Drawing.Point(394, 43)
         Me.lblPlayer2Hand.Margin = New System.Windows.Forms.Padding(3, 10, 3, 3)
         Me.lblPlayer2Hand.Name = "lblPlayer2Hand"
         Me.lblPlayer2Hand.Size = New System.Drawing.Size(233, 47)
@@ -272,7 +284,7 @@ Partial Class WarGUIForm
         Me.lblPlayer2Cards.AutoSize = True
         Me.lblPlayer2Cards.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblPlayer2Cards.ForeColor = System.Drawing.Color.Orange
-        Me.lblPlayer2Cards.Location = New System.Drawing.Point(395, 10)
+        Me.lblPlayer2Cards.Location = New System.Drawing.Point(394, 10)
         Me.lblPlayer2Cards.Name = "lblPlayer2Cards"
         Me.lblPlayer2Cards.Size = New System.Drawing.Size(233, 23)
         Me.lblPlayer2Cards.TabIndex = 7
@@ -459,9 +471,9 @@ Partial Class WarGUIForm
         Me.pnlGameOver.Controls.Add(Me.lblP1FinalCount)
         Me.pnlGameOver.Controls.Add(Me.lblFinalWinner)
         Me.pnlGameOver.Dock = System.Windows.Forms.DockStyle.Right
-        Me.pnlGameOver.Location = New System.Drawing.Point(930, 60)
+        Me.pnlGameOver.Location = New System.Drawing.Point(0, 60)
         Me.pnlGameOver.Name = "pnlGameOver"
-        Me.pnlGameOver.Size = New System.Drawing.Size(400, 793)
+        Me.pnlGameOver.Size = New System.Drawing.Size(1330, 793)
         Me.pnlGameOver.TabIndex = 5
         Me.pnlGameOver.Visible = False
         '
@@ -557,29 +569,17 @@ Partial Class WarGUIForm
         Me.btnPlayCardP2.Text = "Play Card"
         Me.btnPlayCardP2.UseVisualStyleBackColor = False
         '
-        'btnAbout
-        '
-        Me.btnAbout.BackColor = System.Drawing.Color.ForestGreen
-        Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAbout.ForeColor = System.Drawing.Color.White
-        Me.btnAbout.Location = New System.Drawing.Point(345, 13)
-        Me.btnAbout.Name = "btnAbout"
-        Me.btnAbout.Size = New System.Drawing.Size(160, 40)
-        Me.btnAbout.TabIndex = 1
-        Me.btnAbout.Text = "About"
-        Me.btnAbout.UseVisualStyleBackColor = False
-        '
         'WarGUIForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1330, 853)
+        Me.Controls.Add(Me.pnlGameOver)
         Me.Controls.Add(Me.btnPlayCardP2)
         Me.Controls.Add(Me.btnPlayCardP1)
         Me.Controls.Add(Me.grpP2War)
         Me.Controls.Add(Me.grpP1War)
-        Me.Controls.Add(Me.pnlGameOver)
         Me.Controls.Add(Me.tlpNextCards)
         Me.Controls.Add(Me.tlpPlayArea)
         Me.Controls.Add(Me.tlpStatus)

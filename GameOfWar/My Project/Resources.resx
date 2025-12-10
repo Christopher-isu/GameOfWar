@@ -130,6 +130,9 @@
   <data name="CardBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\cards\CardBack.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="honor_diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\cards\honor_diamond.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="JC" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\cards\JC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

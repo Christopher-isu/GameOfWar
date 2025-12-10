@@ -73,7 +73,19 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Card.vb" />
+    <Compile Include="SplashScreenForm.Designer.vb">
+      <DependentUpon>SplashScreenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WarGameLogic.vb" />
     <Compile Include="WarGUIForm.vb">
       <SubType>Form</SubType>
@@ -101,6 +113,12 @@
     <Compile Include="WarPlayer.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenForm.resx">
+      <DependentUpon>SplashScreenForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WarGUIForm.resx">
       <DependentUpon>WarGUIForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -281,6 +299,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="cards\QS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cards\honor_diamond.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
